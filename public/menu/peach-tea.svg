@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Peach tea illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="199" rx="90" ry="13" fill="#f2e8dd"/>
+  <path d="M102 64h116l-12 131h-92z" fill="#f8fbff" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 111h88l-7 64h-74z" fill="#eba466"/>
+  <path d="M119 98h82" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="139" cy="135" r="6" fill="#ffd4a8"/>
+  <circle cx="177" cy="153" r="5" fill="#ffd4a8"/>
+  <path d="M217 45l-20 67" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M204 72c19-5 36 11 31 31-5 18-25 24-41 10-13-13-7-36 10-41z" fill="#f2a169" stroke="#2e1b0e" stroke-width="5"/>
+  <path d="M217 75c-1 20-9 32-24 38" fill="none" stroke="#d87c55" stroke-width="4" stroke-linecap="round"/>
+</svg>

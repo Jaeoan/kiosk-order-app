@@ -1,16 +1,149 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  /* 키오스크 폰트 — 하위 button 포함 모든 요소에 상속 */
+  .kiosk {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif;
+  }
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+@property --draw-border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
 }
 
-#root {
-  width: 100%;
-  height: 100%;
+@keyframes drawMenuBorder {
+  from { --draw-border-angle: 0deg; }
+  to   { --draw-border-angle: 360deg; }
+}
+
+@keyframes optionStageIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes drawWideButtonBorder {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  45% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  95% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  }
+}
+
+@layer utilities {
+  .menu-card-draw-border,
+  .draw-hover-border {
+    isolation: isolate;
+  }
+
+  .menu-card-draw-border::before,
+  .draw-hover-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 30;
+    padding: 3px;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background: conic-gradient(from 270deg, #E07B39 var(--draw-border-angle), transparent 0deg);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .menu-card-draw-border:hover::before,
+  .menu-card-draw-border:focus-visible::before,
+  .draw-hover-border:hover::before,
+  .draw-hover-border:focus-visible::before {
+    opacity: 1;
+    animation: drawMenuBorder 2s linear forwards;
+  }
+
+  .draw-hover-border-white::before {
+    background: conic-gradient(from 270deg, #FFFFFF var(--draw-border-angle), transparent 0deg);
+  }
+
+  .draw-hover-border-wide::before {
+    padding: 0;
+    background:
+      linear-gradient(#E07B39, #E07B39) 0 0 / 0 3px no-repeat,
+      linear-gradient(#E07B39, #E07B39) 100% 0 / 3px 0 no-repeat,
+      linear-gradient(#E07B39, #E07B39) 100% 100% / 0 3px no-repeat,
+      linear-gradient(#E07B39, #E07B39) 0 100% / 3px 0 no-repeat;
+    -webkit-mask: none;
+    mask: none;
+  }
+
+  .draw-hover-border-wide:hover::before,
+  .draw-hover-border-wide:focus-visible::before {
+    animation: drawWideButtonBorder 1.45s linear forwards;
+  }
+
+  .draw-hover-border > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .option-stage-enter {
+    animation: optionStageIn 0.32s cubic-bezier(0.22,1,0.36,1) both;
+  }
+}
+
+/* 애니메이션 키프레임 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  /* 인트로 애니메이션 */
+  .animate-fade-in  { animation: fadeIn      0.4s  ease                             both; }
+  .animate-slide-up { animation: fadeSlideUp 0.6s  cubic-bezier(0.22,1,0.36,1) 0.2s both; }
+  .animate-card     { animation: fadeSlideUp 0.55s cubic-bezier(0.22,1,0.36,1)      both; opacity: 0; }
+  .animate-hint     { animation: fadeIn      0.5s  ease                         1.1s both; opacity: 0; }
+
+  /* 활성 탭 아래 삼각형 */
+  .cat-tab-active::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #E07B39;
+    z-index: 1;
+  }
+
+  /* 스크롤바 */
+  .scrollbar-kiosk {
+    scrollbar-width: thin;
+    scrollbar-color: #D8C0A8 transparent;
+  }
+  .scrollbar-kiosk::-webkit-scrollbar       { width: 4px; }
+  .scrollbar-kiosk::-webkit-scrollbar-thumb { background: #D8C0A8; border-radius: 2px; }
 }

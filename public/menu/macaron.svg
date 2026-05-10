@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Macaron illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="200" rx="94" ry="13" fill="#f2e8dd"/>
+  <path d="M78 128c7-31 38-53 82-53s75 22 82 53z" fill="#f7b5c6" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M79 128h162v28H79z" fill="#fff4d8" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M78 156c9 30 39 47 82 47s73-17 82-47z" fill="#c8b3ea" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M109 119c24-14 47 11 72-1 11-5 22-5 34 1M108 166c25 13 46-9 72 1 13 5 23 4 34-1" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <circle cx="121" cy="98" r="5" fill="#fff"/>
+  <circle cx="184" cy="92" r="5" fill="#fff"/>
+  <circle cx="211" cy="177" r="5" fill="#fff"/>
+</svg>
