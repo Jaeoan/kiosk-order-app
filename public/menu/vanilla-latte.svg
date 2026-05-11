@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Vanilla latte illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="198" rx="92" ry="13" fill="#f2e8dd"/>
+  <path d="M104 70h112l-11 124h-90z" fill="#fffaf2" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 104h88l-7 70h-74z" fill="#d9a36f"/>
+  <path d="M124 100h72c-8 18-24 29-36 29s-28-11-36-29z" fill="#fff6df"/>
+  <path d="M143 59l22-22 8 34M181 62l27-12" fill="none" stroke="#d9aa52" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="128" cy="83" r="7" fill="#f1d69b"/>
+  <circle cx="191" cy="86" r="7" fill="#f1d69b"/>
+</svg>

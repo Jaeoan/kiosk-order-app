@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Green tea illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="196" rx="90" ry="13" fill="#f2e8dd"/>
+  <path d="M96 86h122v47c0 36-26 62-61 62s-61-26-61-62z" fill="#f7f0e8" stroke="#2e1b0e" stroke-width="6"/>
+  <path d="M218 105h18c18 0 29 10 29 25s-11 25-29 25h-18" fill="none" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="157" cy="86" rx="61" ry="20" fill="#7ead5b" stroke="#2e1b0e" stroke-width="6"/>
+  <path d="M128 79c18-10 39 10 58-1" fill="none" stroke="#cde7a5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M140 51c-14 4-21 15-20 27 13 1 25-6 29-20M184 49c15 3 23 14 23 27-13 2-26-5-31-18" fill="#8fc16a" stroke="#2e1b0e" stroke-width="5" stroke-linejoin="round"/>
+</svg>

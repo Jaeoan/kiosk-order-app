@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Cookie illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="198" rx="94" ry="13" fill="#f2e8dd"/>
+  <circle cx="160" cy="125" r="69" fill="#d79a58" stroke="#2e1b0e" stroke-width="6"/>
+  <path d="M116 93c16-17 45-24 75-8M103 132c5 23 24 43 49 50M201 115c15 11 20 30 11 47" fill="none" stroke="#efc082" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <circle cx="136" cy="112" r="8" fill="#5a351f"/>
+  <circle cx="173" cy="93" r="7" fill="#5a351f"/>
+  <circle cx="190" cy="138" r="9" fill="#5a351f"/>
+  <circle cx="145" cy="157" r="7" fill="#5a351f"/>
+  <circle cx="116" cy="135" r="6" fill="#5a351f"/>
+</svg>

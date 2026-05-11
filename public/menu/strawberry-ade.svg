@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Strawberry ade illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="199" rx="90" ry="13" fill="#f2e8dd"/>
+  <path d="M101 64h118l-13 131h-92z" fill="#f8fbff" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 116h88l-6 59h-76z" fill="#ef6b7d"/>
+  <path d="M118 101h84" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="142" cy="138" r="6" fill="#ffd8df"/>
+  <circle cx="180" cy="153" r="5" fill="#ffd8df"/>
+  <path d="M214 43l-19 71" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M196 74c-12 11-9 31 8 36 17-6 20-25 8-36-4-4-12-4-16 0z" fill="#e8485f" stroke="#2e1b0e" stroke-width="5"/>
+  <path d="M201 70l-7-11 12 5 12-5-7 11" fill="#78a957" stroke="#2e1b0e" stroke-width="4" stroke-linejoin="round"/>
+</svg>

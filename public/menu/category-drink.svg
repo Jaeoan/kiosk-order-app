@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Drink category illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <path d="M88 54h144l-15 145H103z" fill="#f8fbff" stroke="#2e1b0e" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M105 121h110l-8 57h-94z" fill="#f2b557"/>
+  <path d="M108 98h104" stroke="#2e1b0e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="135" cy="142" r="8" fill="#fff3bd"/>
+  <circle cx="180" cy="156" r="7" fill="#fff3bd"/>
+  <path d="M221 32l-26 91" stroke="#2e1b0e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="231" cy="78" r="28" fill="#f8d957" stroke="#2e1b0e" stroke-width="6"/>
+</svg>

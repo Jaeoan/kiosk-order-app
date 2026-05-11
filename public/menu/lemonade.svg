@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Lemonade illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="198" rx="88" ry="13" fill="#f2e8dd"/>
+  <path d="M101 63h118l-13 132h-92z" fill="#f8fbff" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 116h88l-6 59h-76z" fill="#f8d957"/>
+  <path d="M118 101h84" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="138" cy="137" r="7" fill="#fff3a4"/>
+  <circle cx="178" cy="154" r="6" fill="#fff3a4"/>
+  <path d="M216 76l27-34" stroke="#2e1b0e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="220" cy="83" r="25" fill="#f9de48" stroke="#2e1b0e" stroke-width="6"/>
+  <path d="M220 58v50M195 83h50M202 65l36 36M238 65l-36 36" stroke="#fff7bc" stroke-width="4"/>
+</svg>

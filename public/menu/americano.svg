@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Americano illustration">
+  <rect width="320" height="240" fill="#fff"/>
+  <ellipse cx="160" cy="198" rx="94" ry="13" fill="#f2e8dd"/>
+  <path d="M92 78h136l-14 114H106z" fill="#f8fbff" stroke="#2e1b0e" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M104 100h112l-8 70H112z" fill="#6b3f24"/>
+  <path d="M113 113c25-11 50 11 76 0 9-4 18-4 27-1" fill="none" stroke="#b27846" stroke-width="8" stroke-linecap="round"/>
+  <path d="M125 49c-9 14 10 20 1 33M163 43c-11 16 12 22 1 37M198 49c-9 13 9 20 0 33" fill="none" stroke="#d8a06b" stroke-width="6" stroke-linecap="round"/>
+</svg>
