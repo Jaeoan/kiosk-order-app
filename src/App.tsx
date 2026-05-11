@@ -297,9 +297,9 @@ export function App() {
                   return (
                     <div key={c.id} {...cartItemProps} className={`flex items-center gap-[5px] py-2 rounded-[8px] px-2 mb-1 transition-all duration-300 ${
                       cancelingCartId === c.id
-                        ? 'draw-hover-border border-2 border-[#E07B39] bg-[#FFE8DC] scale-95 opacity-0' 
-                        : cancelMode 
-                          ? 'border-2 border-[#F0D8C0] bg-[#FFF8F5] hover:bg-[#FFE8DC]' 
+                        ? 'border-2 border-[#E07B39] bg-[#FFE8DC] scale-95 opacity-0'
+                        : cancelMode
+                          ? 'draw-hover-border border-2 border-[#F0D8C0] bg-[#FFF8F5] hover:bg-[#FFE8DC]'
                           : 'border-0 bg-transparent'
                     }`}>
                       {cancelMode && (
