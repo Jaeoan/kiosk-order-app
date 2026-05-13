@@ -143,9 +143,18 @@ export function App() {
   }
 
   const handleCancel = () => {
-    if (cart.length === 0) return
+    if (cart.length === 0) {
+      setCancelMode(false)
+      return
+    }
     setCancelMode(!cancelMode)
   }
+
+  useEffect(() => {
+    if (cancelMode && cart.length === 0) {
+      setCancelMode(false)
+    }
+  }, [cancelMode, cart.length])
 
   const handleCartItemCancel = (id: string) => {
     setCancelingCartId(id)
@@ -525,8 +534,8 @@ export function App() {
                   disabled={!optionTemperature || !optionSize}
                   {...hoverSelectProps(handleAddOptionItem, Boolean(optionTemperature && optionSize))}
                   className={[
-                    'draw-hover-border relative h-[48px] rounded-[10px] border-none text-[17px] font-black text-white cursor-pointer',
-                    optionTemperature && optionSize ? 'bg-[#FF6417]' : 'bg-[#CFC5BD] cursor-not-allowed',
+                    'draw-hover-border draw-hover-border-white relative h-[48px] rounded-[10px] text-[17px] font-black text-white cursor-pointer',
+                    optionTemperature && optionSize ? 'bg-[#FF6417] border border-white' : 'bg-[#CFC5BD] cursor-not-allowed',
                   ].join(' ')}
                 >
                   <span className="mr-2 text-[12px] text-white/80">2</span>

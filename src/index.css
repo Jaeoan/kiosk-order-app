@@ -49,6 +49,7 @@
 @layer utilities {
   .menu-card-draw-border,
   .draw-hover-border {
+    position: relative;
     isolation: isolate;
   }
 
